@@ -17,10 +17,8 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     companion object {
-        fun startActivity(context: Context) {
-            context.startActivity(
-                Intent(context, RegisterActivity::class.java)
-            )
+        fun createIntent(context: Context) : Intent {
+            return Intent(context, RegisterActivity::class.java)
         }
     }
 }

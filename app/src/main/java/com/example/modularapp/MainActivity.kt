@@ -1,8 +1,9 @@
 package com.example.modularapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.register.RegisterActivity
+import androidx.appcompat.app.AppCompatActivity
+import com.example.navigation.Navigator
+import com.example.register.navigation.RegisterNavData
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        RegisterActivity.startActivity(this)
+        Navigator.goTo(this, RegisterNavData())
     }
 }

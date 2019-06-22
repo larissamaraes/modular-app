@@ -1,1 +1,1 @@
-include ':app', ':register-feature'
+include ':app', ':register-feature', ':navigation-library'

@@ -1,1 +1,1 @@
-include ':app', ':register'
+include ':app', ':register-feature'
